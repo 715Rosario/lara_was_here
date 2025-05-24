@@ -1,0 +1,172 @@
+<!-- CSS CHEAT SHEET -->
+<style>
+    body {
+        background-color: lavender; 
+        font-family: 'Segeo UI', Tahoma, Geneva, Verdana,
+        sans-serif;
+    }
+
+    img {
+        display: block; 
+        margin-top: 0.9em;
+    }
+
+    button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: bold;
+        padding: 1em; 
+        margin-top: 0.8em; 
+        color:black; 
+        background-color: lightblue;
+        border-radius: 0.5em;
+        border: none; 
+        display: inline; 
+    }
+
+    button:hover {
+        padding: 0.8em; 
+        margin-top: 0.8em;
+        color:white; 
+        background-color: cornflowerblue;
+        border-radius: 0.5em;  
+    }
+
+    .pale-bg { /*   The '.' indicates pale-bg is a class   */
+        background-color: lightyellow;
+    }
+
+    #first-div { /*   The '#' indicates first-dic-bg is an ID   */
+        color: coral;
+    }
+
+    #second-div { /*   The '#' indicates first-dic-bg is an ID   */
+        color: cornflowerblue;
+    }
+
+    #third-div { /*   The '#' indicates first-dic-bg is an ID   */
+        color: lightseagreen;
+    }
+
+    #fourth-div { /*   The '#' indicates first-dic-bg is an ID   */
+        width: 95%;
+        height: 15%;
+        background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvay1wLXQtMTAwLmpwZw.jpg");
+        background-size: cover;
+    }
+
+
+</style>
+
+
+
+<!-- HTML CHEAT SHEET -->
+<!-- Headings --> <br>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<!-- Lists --> <br>
+<ol>
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+</ol>
+
+<ul>
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+</ul>
+
+<!-- Text --> <br>
+<p>Paragraph</p>
+<b>Bold</b>
+<u>Underline</u>
+<i>Italic</i>
+
+<!-- Images --> <br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" width=“10%”>
+<img src="/ubc.jpg" width="50%">
+
+<!-- Links and Buttons --> <br>
+<a href="https://www.youtube.com/">Click here for Youtube!</a>
+<button>This is a button!</button>
+<button><a href="https://www.youtube.com/">And here!</a></button>
+<a href="https://www.youtube.com/"><button>Click here!</button></a>
+
+<!-- Inputs --><br>
+<input type="text">
+<input type="password">
+<input type="color">
+<input type="number">
+
+<!-- Divisions --><br>
+<div class="pale-bg" id="first-div">
+    <h2>Section 1 heading</h2>
+    <h4>Section 1 subheading</h4>
+    <p>Discussion and explanation of section 1.</p>
+    <p>This div has class = "pale-bg" and id = "first-div"</p>
+</div>
+
+<div id="second-div">
+    <h2>Section 2 heading</h2>
+    <h4>Section 2 subheading</h4>
+    <p>Discussion and explanation of section 2.</p>
+    <p>This div has id = "second-div"</p>
+</div>
+
+<div class="pale-bg">
+    <h2>Section 2 heading</h2>
+    <h4>Section 2 subheading</h4>
+    <p>Discussion and <span>explanation of section 2.</span></p>
+    <p>This div has class = "pale-bg"</p>
+</div>
+
+<div id="fourth-div"></div>
+
+
+
+<!-- JAVASCRIPT CHEAT SHEET -->
+<script>
+
+// Variables -------------------------------------
+let myGrade = 8; // let variables can be changed after
+const birthday = "February 24th, 2000"; // const variables cannot
+let isAGirl = true;
+
+
+// Functions -------------------------------------
+// With 2 parameters:
+function printTwoThings(x, y) {
+	// Prints x and y together
+	console.log(x, y);
+}
+
+// With no parameters:
+function printsHelloWorld() {
+	console.log("Hello World!");
+}
+
+// Calling functions:
+const start = "good";
+printTwoThings(good, "morning!");
+printsHelloWorld();
+
+
+// Objects -------------------------------------
+/* 
+Objects can have ATTRIBUTES:
+    cat.name; --> "name" == attribute
+
+Objects can have FUNCTIONS:
+     cat.meow(); --> meow() == function
+*/
+
+// Cpmmon JavaScript objects
+document; // Represents the current web page 
+document.getElementById("some-element-id"); // Returns the HTML element with the matching element id
+
+</script>
