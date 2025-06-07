@@ -12,3 +12,10 @@ function saveName() {
     document.getElementById("username").textContent = newName;
     document.getElementById("greeter").value = "";
 }
+
+document.querySelectorAll('.accordion-header').forEach( function(button) { //retrieve each accordion header button (getting buttons labelled "accordion-header")
+    button.addEventListener('click', function() { //if you click, do function
+        let content = this.nextElementSibling; //retrieves accordion-content (accordion-content goes into "content")
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block' ; //if it's shown, hide it and vice versa
+    });
+});
