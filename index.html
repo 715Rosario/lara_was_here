@@ -10,13 +10,19 @@
     </head>
 
     <body>
-
+         <nav class="navbar">
+            <ul class="nav-links">
+                <li class ="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About the Author</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+         </nav>
         <!-- TYPE CODE BELOW -->
          <div id="header">
             <h1>Welcome, <span id="username">______</span></h1>
             <span>
                 <input  id="greeter" type="text">
-                <button id="save-name">Save</button>
+                <button id="save-name" onclick="saveName()">Save</button>
             </span>
         </div>
          <div id="intro" class="writing">

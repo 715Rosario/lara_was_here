@@ -7,4 +7,8 @@ function greeting(MyName) {
 }
 greeting("Lara");
 
-let newName = document.getElementId("greeter").value;
+function saveName() {
+    let newName = document.getElementById("greeter").value; //text field value from user//
+    document.getElementById("username").textContent = newName;
+    document.getElementById("greeter").value = "";
+}

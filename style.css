@@ -1,5 +1,5 @@
 h1 {
-    color:rgb(0, 41, 75);
+    color:rgb(0, 180, 150);
 }
 p {
     color:rgb(0, 217, 255);
@@ -21,14 +21,14 @@ p {
 }
 
 a:visited {
-    color: rgb(255, 0, 0)
+    color: rgb(255, 255, 255)
 }
 
 a {
-    color: rgb(0, 255, 64);
+    color: rgb(255, 255, 255);
 }
 #header {
-    background-image: url(https://www.fangamer.com/cdn/shop/products/product_oneshot_library_stroll_poster_main_eac7f6a1-236b-4568-84d5-25fad574dd4d.png?crop=center&height=1200&v=1663282941&width=1800);
+    background-image: url(https://i.pinimg.com/originals/fa/bd/2c/fabd2c1e276a4f10de2011110f1ec7cc.jpg);
     background-size: cover;
     height: 15rem;
     color:goldenrod;
@@ -39,4 +39,51 @@ a {
     align-items: center;
     flex-direction: column;
     padding-bottom: 5%;
+}
+
+.navbar {
+    background-color: rgb(0, 77, 77);
+    display: flex;
+    justify-content: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 5em;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: aqua;
+    font-size: 1.1rem;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: 0.2s
+}
+.nav-links li a:hover {
+    background-color: black;
+}
+.title {
+    text-align: center;
+    padding: 1em;
+}
+.current {
+    text-decoration: underline dotted rgb(0, 194, 201);
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: black;
+    border: none;
+    padding: 1em 1em 1em 3em;
+    text-align: left;
+    font-size: 1.1em;
+    color: rgb(0, 196, 196);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.accordion-content {
+    display: none;
+}
+.accordion-header:hover {
+    background-color: rgb(0, 44, 80);
 }
