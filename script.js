@@ -1,6 +1,7 @@
 let MyName = "Lara";
 let MyAge = 13;
 let LikesSushi = true;
+const PASSWORD = "SOLSTICE";
 
 function greeting(MyName) {
     console.log("Hello", MyName);
@@ -19,3 +20,19 @@ document.querySelectorAll('.accordion-header').forEach( function(button) { //ret
         content.style.display = (content.style.display === 'block') ? 'none' : 'block' ; //if it's shown, hide it and vice versa
     });
 });
+
+function validatePass() {
+    const login = document.getElementById('password');
+    const msg = document.getElementById('message');
+    const hiddenEntries = document.querySelectorAll('.hidden');
+
+    if (login.value === PASSWORD) {
+        msg.textContent="Password confirmed.";
+        hiddenEntries.forEach(function(entry) {entry.style.display ='flex';});
+    } else {
+        hiddenEntries.forEach(function(entry) {entry.style.display ='none';});
+        msg.textContent='Incorrect password.';
+    }
+
+    login.value = '';
+}
